@@ -1,0 +1,40 @@
+//Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+
+// int CutNumber(){
+//     Console.Write("Введите число: ");
+//     int number = Convert.ToInt32(Console.ReadLine());
+//     int dec = number / 10;
+//     int result = dec % 10;
+//     return result;
+// }
+// int number = CutNumber();
+// Console.Write("Вторая цифра этого числа: "+ number);
+
+//Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+
+// int Number;
+// string OtherNumber;
+
+// Console.Write("Введи число: ");
+// Number = Convert.ToInt32(Console.ReadLine());
+// OtherNumber = Convert.ToString(Number);
+// if (OtherNumber.Length > 2){
+//   Console.WriteLine("Третья цифра: " + OtherNumber[2]);
+// }
+// else {
+//   Console.WriteLine("Третьей цифры нет");
+// }
+
+// //Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+// void day(){
+//     Console.WriteLine("Введи число обозначающее день недели: ");
+//     int num = Convert.ToInt32(Console.ReadLine());
+//     if (num < 6 && num < 7){
+//         Console.WriteLine("Этот день является будним днем "); 
+//     }
+//     else{
+//         Console.WriteLine("Этот день является выходным днем "); 
+//     }
+// }
+// day();
