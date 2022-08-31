@@ -1,0 +1,50 @@
+//Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+
+// void Pal(string number){
+//   if (number[0]==number[4] || number[1]==number[3]){
+//     Console.WriteLine("Введенное число - палиндром");
+//   }
+//   else Console.WriteLine("Введенное число - не палиндром");
+// }
+// Console.Write("Введите пятизначное число: ");
+// string number = Console.ReadLine();
+// Pal(number);
+
+// Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+
+// Console.WriteLine("Введите координаты точки a: ");
+// Console.Write("x = ");
+// double x1 = Convert.ToDouble(Console.ReadLine()); 
+// Console.Write("y = ");
+// double y1 = Convert.ToDouble(Console.ReadLine());
+// Console.Write("z = ");
+// double z1 = Convert.ToDouble(Console.ReadLine());
+
+// Console.WriteLine("Введите координаты точки b: ");
+// Console.Write("x = ");
+// double x2 = Convert.ToDouble(Console.ReadLine()); 
+// Console.Write("y = ");
+// double y2 = Convert.ToDouble(Console.ReadLine());
+// Console.Write("z = ");
+// double z2 = Convert.ToDouble(Console.ReadLine());
+
+// double result = Math.Sqrt(Math.Pow((x1 - x2), 2) + Math.Pow((y1 - y2), 2) + Math.Pow((z1 - z2), 2));
+// Console.WriteLine("Расстояние между точками равно " + result);
+
+// Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+
+// void square(int n){
+//     Console.Write(n*n*n + " ");
+// }
+// Console.WriteLine ("Введите цифру: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int count=1;
+// if (num>=1){
+//     while (count<=num){
+//         square(count);
+//         count++;
+//     }
+// }
+// else{
+//     Console.WriteLine("Введенная цифра не верная");
+// }
