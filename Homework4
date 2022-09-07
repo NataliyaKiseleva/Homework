@@ -30,3 +30,36 @@ int number = Convert.ToInt32(Console.ReadLine());
 Numbers(number);
 
 // Задача 29: Напишите программу, которая задаёт массив из произвольного элементов и выводит их на экран.
+using System;
+namespace TaskArray
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Укажите количество элементов, из которых будет состоять массив: ");
+            int sizeArray = Convert.ToInt32(Console.ReadLine());
+            SnowArray(CreateRandomArray(sizeArray));
+            Console.ReadKey();
+        }
+        static private void SnowArray(int[] array)
+        {
+            Console.Write("Массив состоит из следующих элементов: ");
+            Console.Write("[");
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.Write(array[i]);
+        }
+        Console.Write("]");
+        }
+        static private int[] CreateRandomArray(int sizeArray)
+        {
+             int[] array = new int[sizeArray];
+             for (int i = 0; i < sizeArray; i++)
+             {
+                 array[i] = Convert.ToInt32(Console.ReadLine());
+            }
+             return array;
+        }
+    }
+}
