@@ -35,6 +35,38 @@ Console.WriteLine($"Количество чётных чисел в массив
 
 //Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
 
+// int[] CreateRandomArray(int size, int min, int max){
+//     int[] array = new int[size];
+//     for(int i=0; i<size; i++){ 
+//         array[i] = new Random().Next(1,1000); // - т.к. иначе будет не 100, а 99
+//     }
+//     return array;
+// }
+// void  ShowArray(int[] array){
+//     Console.Write("[ ");
+//     for(int i=0; i<array.Length; i++){
+//         Console.Write($"{array[i]} ");
+//     }
+//     Console.Write("]");
+// }
+// int Even(int[] array){
+//     int count = 0;
+//     for (int i = 0; i<array.Length; i++ ){
+//     if (i % 2 == 1)
+//     {
+//       count = count + array[i];
+//     }
+//   }
+//   return count;
+// }
+// Console.WriteLine("Input size: ");
+// int size = Convert.ToInt32(Console.ReadLine());
+// int[] array = CreateRandomArray(size, 1, 1000);
+// ShowArray(array);
+// int arrayResult = Even(array);
+// Console.WriteLine();
+// Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях: {arrayResult}");
+
 
 
 
