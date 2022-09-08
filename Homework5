@@ -3,7 +3,7 @@
 // int[] CreateRandomArray(int size, int min, int max){
 //     int[] array = new int[size];
 //     for(int i=0; i<size; i++){ 
-//         array[i] = new Random().Next(100, 1000); // - т.к. иначе будет не 100, а 99
+//         array[i] = new Random().Next(100, 1000);
 //     }
 //     return array;
 // }
