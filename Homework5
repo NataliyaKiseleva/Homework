@@ -1,44 +1,44 @@
-Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
+// Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
 
-int[] CreateRandomArray(int size, int min, int max){
-    int[] array = new int[size];
-    for(int i=0; i<size; i++){ 
-        array[i] = new Random().Next(100, 1000); // - т.к. иначе будет не 100, а 99
-    }
-    return array;
-}
-void  ShowArray(int[] array){
-    Console.Write("[ ");
-    for(int i=0; i<array.Length; i++){
-        Console.Write($"{array[i]} ");
-    }
-    Console.Write("]");
-}
-int Even(int[] array){
-    int count = 0;
-    for (int i = 0; i<array.Length; i++ ){
-    if (array[i] % 2 == 0)
-    {
-      count++;
-    }
-  }
-  return count;
-}
-Console.WriteLine("Input size: ");
-int size = Convert.ToInt32(Console.ReadLine());
-int[] array = CreateRandomArray(size,100,1000);
-ShowArray(array);
+// int[] CreateRandomArray(int size, int min, int max){
+//     int[] array = new int[size];
+//     for(int i=0; i<size; i++){ 
+//         array[i] = new Random().Next(100, 1000); // - т.к. иначе будет не 100, а 99
+//     }
+//     return array;
+// }
+// void  ShowArray(int[] array){
+//     Console.Write("[ ");
+//     for(int i=0; i<array.Length; i++){
+//         Console.Write($"{array[i]} ");
+//     }
+//     Console.Write("]");
+// }
+// int Even(int[] array){
+//     int count = 0;
+//     for (int i = 0; i<array.Length; i++ ){
+//     if (array[i] % 2 == 0)
+//     {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// Console.WriteLine("Input size: ");
+// int size = Convert.ToInt32(Console.ReadLine());
+// int[] array = CreateRandomArray(size,100,1000);
+// ShowArray(array);
 
-int count = Even(array);
-Console.WriteLine();
-Console.WriteLine($"Количество чётных чисел в массиве: {count}");
+// int count = Even(array);
+// Console.WriteLine();
+// Console.WriteLine($"Количество чётных чисел в массиве: {count}");
 
 //Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
 
 // int[] CreateRandomArray(int size, int min, int max){
 //     int[] array = new int[size];
 //     for(int i=0; i<size; i++){ 
-//         array[i] = new Random().Next(1,1000); // - т.к. иначе будет не 100, а 99
+//         array[i] = new Random().Next(1,1000);
 //     }
 //     return array;
 // }
@@ -67,9 +67,35 @@ Console.WriteLine($"Количество чётных чисел в массив
 // Console.WriteLine();
 // Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях: {arrayResult}");
 
+// Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 
-
-
-
-
-Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+// int min = 0;
+// int max = 0;
+// int Diff(int[] array){
+//     for (int i = 0; i < array.Length; i++){
+//         if (array[min] > array[i])
+//             min = i;
+//         else if (array[max] < array[i])
+//             max = i;
+//     }
+//     int result = 0;
+//     if (array[min] > array[max])
+//         result = array[min] - array[max];
+//     else if (array[max] > array[min])
+//         result = array[max] - array[min];
+//     return result;
+// }
+//     Console.Write("Input size: ");
+//     int size = Convert.ToInt32(Console.ReadLine());
+//     int[] array = new int[size];
+//     Console.Write("Input min:  ");
+//     int Min = Convert.ToInt32(Console.ReadLine());
+//     Console.Write("Input max:  ");
+//     int Max = Convert.ToInt32(Console.ReadLine());
+//     Random rand = new Random();
+//         for (int i = 0; i < array.Length; i++)
+//             array[i] = rand.Next(Min, Max);
+//         for (int i = 0; i < array.Length; i++)
+//             Console.Write(array[i] + " ");
+//     Console.WriteLine();
+//     Console.WriteLine($"Разница между максимальным и минимальным элементом массива равна {Diff(array)}");
