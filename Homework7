@@ -1,0 +1,25 @@
+// Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
+
+// void Show2dArray1(double[,] array){
+//      for(int i = 0; i<array.GetLength(0); i++){
+//          for(int j = 0; j<array.GetLength(1); j++){
+//             array[i, j] = Convert.ToDouble(new Random().Next(-100, 100)) / 10;
+//         }
+//     }
+// }
+// void Show2dArray(double[,] array){
+//     for(int i=0; i<array.GetLength(0); i++){   //GetLength-берем длину по строкам
+//         Console.WriteLine();                 
+//         for(int j=0; j<array.GetLength(1); j++){
+//             Console.Write(array[i,j] + " ");                 
+//         }
+//     }
+// }
+// Console.Write("Input numb of m: ");
+// int m = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input numb of n: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// double[,] array = new double[m, n];
+// Show2dArray1(array);
+// Show2dArray(array);
+
