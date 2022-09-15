@@ -23,3 +23,61 @@
 // Show2dArray1(array);
 // Show2dArray(array);
 
+// Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
+
+// void CreateRandom2dArray(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             array[i, j] = new Random().Next(1, 10);
+//         }
+//     }
+// }
+// void Show2dArray(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i, j] + " ");
+//         }
+//         Console.WriteLine();
+//     }
+//     Console.WriteLine();
+// }
+// Console.Write("Input numb of position1: ");
+// int position1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input numb of position2: ");
+// int position2 = Convert.ToInt32(Console.ReadLine());
+// int[,] numbers = new int[3, 4];
+// CreateRandom2dArray(numbers);
+// Show2dArray(numbers);
+// if (position1 < numbers.GetLength(0) && position2 < numbers.GetLength(1)) Console.WriteLine(numbers[position1, position2]);
+// else Console.WriteLine($"{position1}{position2} Такого числа в массиве нет");
+
+//Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+
+// Random random = new Random();
+// int[,] arr = new int[random.Next(1, 10), random.Next(1, 10)];
+// for (int i = 0; i < arr.GetLength(0); i++)
+// {
+// for (int j = 0; j < arr.GetLength(1); j++)
+// {
+// arr[i, j] = random.Next(1, 10);
+// Console.Write(arr[i, j] + " ");
+// }
+// Console.WriteLine();
+// }
+// Console.WriteLine();
+// for (int j = 0; j < arr.GetLength(1); j++)
+// {
+// double sum = 0;
+// for (int i = 0; i < arr.GetLength(0); i++)
+// {
+// sum += arr[i, j];
+// }
+// Console.Write($"{ sum / arr.GetLength(0)} ");
+// }
+// Console.ReadLine();
