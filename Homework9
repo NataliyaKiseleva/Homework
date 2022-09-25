@@ -1,1 +1,71 @@
+// //Задача 64: Задайте значения M и N. Напишите программу, которая выведет все натуральные числа в промежутке от M до N.
+// //Запрос данных от пользователя
+// Console.Write("Введите число M: ");
+// int M = int.Parse(Console.ReadLine());
+// Console.Write("Введите число N: ");
+// int N = int.Parse(Console.ReadLine());
+// //Рекурсия числа от M до N и вывод рез-та
+// if (N>M)
+// for (int i = M; i <= N; i++)
+//     Console.Write($"{i}");
+// else
+//     for (int i = N; i <= M; i++)
+//         Console.Write($"{i}");
 
+
+//Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
+// int ReadData(string line)
+// {
+//     Console.Write(line);
+//     int num = int.Parse(Console.ReadLine()??"1");
+//     return num;
+// }
+// //Нахождение суммы от M до N
+// int sumMN(int M, int N)
+// {
+//     if(M>=N)
+//     {
+//         return N;
+//     }
+//     else
+//     {
+//         return M + sumMN(M+1,N);
+//     }
+// }
+// //Вывод рез-та
+// void PrintData(string prefix, string num)
+// {
+//     Console.WriteLine(prefix + num);
+// }
+
+// int M = ReadData("Введите число M: ");
+// int N = ReadData("Введите число N: ");
+// int sum = 0;
+// if(M<N){
+//     sum = sumMN(M,N);
+// } 
+// else{
+//     sum = sumMN(N,M);
+// }
+// PrintData("Сумма чисел от M до N равна: ", sum.ToString());
+
+
+// //Задача 68: Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
+
+// //Запрос данных от пользователя
+
+// Console.WriteLine("Введите число M: ");
+// int M = int.Parse(Console.ReadLine());
+// Console.WriteLine("Введите число N: ");
+// int N = int.Parse(Console.ReadLine());
+
+// //Вычисление функции Аккермана:
+// int FuncA (int M, int N)
+// {
+//     if (M == 0) return N + 1;
+//     if (M != 0 && N == 0) return FuncA(M - 1, 1);
+//     if (M > 0 && N > 0) return FuncA(M - 1, FuncA(M, N - 1));
+// return FuncA(M, N);
+// }
+// //Вывод рез-та
+// Console.WriteLine($"Функция Аккермана равна {FuncA(M, N)}");
